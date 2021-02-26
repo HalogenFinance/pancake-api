@@ -25,7 +25,7 @@ const getBnbPrice = async () => {
 const getCakePrice = async () => {
   const wbnb = new Web3EthContract(ERC20ABI.abi, '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c');
   const bnbAmount = await wbnb.methods.balanceOf('0xA527a61703D82139F8a06Bc30097cC9CAA2df5A6').call()
-  const wcake = new Web3EthContract(ERC20ABI.abi, '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82');
+  const wcake = new Web3EthContract(ERC20ABI.abi, '0x8f5ab78E354a859e4eE8524A3FE5be402378E128');
   const cakeAmount = await wcake.methods.balanceOf('0xA527a61703D82139F8a06Bc30097cC9CAA2df5A6').call()
   const bnbPrice = await getBnbPrice()
 
